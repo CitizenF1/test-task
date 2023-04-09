@@ -22,6 +22,16 @@ func TestFindSelf(t *testing.T) {
 			input:    "matches",
 			expected: []string{"matches", "matches", "matches", "matches"},
 		},
+		{
+			name:     "Test tree",
+			input:    "left",
+			expected: []string{"left", "left", "left", "left"},
+		},
+		{
+			name:     "Test four",
+			input:    "FindMaxSubstring",
+			expected: []string{"FindMaxSubstring"},
+		},
 	}
 
 	for _, test := range tests {

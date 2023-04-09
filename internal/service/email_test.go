@@ -53,6 +53,11 @@ func TestFindIIN(t *testing.T) {
 			input:    "dasdasd: Инн: 902312301548  902312301547 \n\t 902312301543",
 			expected: []string{"902312301548", "902312301547", "902312301543"},
 		},
+		{
+			name:     "Test empty",
+			input:    "",
+			expected: nil,
+		},
 	}
 
 	for _, test := range tests {
