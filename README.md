@@ -6,7 +6,7 @@ sudo docker build -t app -f Dockerfile .
 
 #### Run docker container and past port variable 
 ```
-sudo docker run --rm -d -e APP_PORT={PORT} app
+sudo docker run -p 8000:8000 --rm -d -e APP_PORT={PORT} app
 ```
 
 ### Доступные Endpoint'ы
