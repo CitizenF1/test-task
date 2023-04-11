@@ -31,7 +31,7 @@ func (a *App) Run(port string) error {
 
 	// HTTP Server
 	a.httpServer = &http.Server{
-		Addr:           "localhost:" + port,
+		Addr:           ":" + port,
 		Handler:        router,
 		ReadTimeout:    10 * time.Second,
 		WriteTimeout:   10 * time.Second,
